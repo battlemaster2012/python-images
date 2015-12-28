@@ -31,6 +31,7 @@ def main():
         data['Date'] = str(datetime.date.today())
         data['url'] = content.media_content[0]['url']
         data['used'] = False
+        data['SFW'] = True if content.media_rating['content'] == 'nonadult' else False
         json_holder[x] = data
         data = {}
         x += 1
