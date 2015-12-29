@@ -27,6 +27,7 @@ def main():
 
     for content in d.entries:
 #        print(content.media_content[0]['url'])
+        data['Title'] = content.title
         data['Artists'] = 'Poromaa'
         data['Date'] = str(datetime.date.today())
         data['url'] = content.media_content[0]['url']

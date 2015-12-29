@@ -37,7 +37,7 @@ import pymongo
 
 ### Standard URI format: mongodb://[dbuser:dbpassword@]host:port/dbname
 
-MONGODB_URI = 'mongodb://%s:%s@ds037215.mongolab.com:%s/%s' % (UN, PW, '37215', 'heroku_j3jxlf8g')
+MONGODB_URI = 'mongodb://%s:%s@ds037215.mongolab.com:%s/%s' % ('UN', 'PW', '37215', 'heroku_j3jxlf8g')
 client = pymongo.MongoClient(MONGODB_URI)
 
 db = client.get_default_database()
