@@ -46,6 +46,7 @@ def main():
 
 #    images.insert(parsed_json)
 
+#    output = '['
     for x in range(0, len(parsed_json)):
 #        output = output + str(parsed_json[str(x)])
 #        if x != (len(parsed_json) - 1):
